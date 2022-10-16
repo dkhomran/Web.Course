@@ -1,0 +1,1690 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programmation Web 1</title>
+    <link rel="icon" href="./images/favicon1.png" />
+    <link rel="stylesheet" href="css/GlobalStyle.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script defer src="js/main.js"></script>
+  </head>
+
+  <body>
+    <!-- 
+      block One
+     -->
+    <section class="blockOne">
+      <div class="container">
+        <header class="nav-bar">
+          <img id="icon-nav" src="./images/list.png" alt="" />
+          <!-- *
+      block Tow
+    -->
+          <section class="block-tow">
+            <div id="nav_Content" class="container">
+              <div>
+                <h3 class="titles">Outline</h3>
+              </div>
+
+              <ul>
+                <li class="chap-item">
+                  <a class="active" href="#arch-Web">architecture web</a>
+                </li>
+                <li class="chap-item">
+                  <a href="#lang-Html">Language HTML</a>
+                </li>
+                <li class="chap-item">
+                  <a href="#css">Feuilles de style CSS</a>
+                </li>
+                <li class="chap-item"><a href="#js">Javascript</a></li>
+                <li class="chap-item"><a href="#conclusion">Conclusion</a></li>
+              </ul>
+            </div>
+          </section>
+        </header>
+
+        <div class="course-title">
+          <h1>Programmation Web I</h1>
+          <h2>Codes exécutés par les clients (HTML, CSS, Javascript)</h2>
+        </div>
+
+        <div class="course-owner">
+          <h3>Dr. Salwa Habbachi</h3>
+          <h3>Universite Arabe des Sciences</h3>
+          <h3>Ann ́ee Universitaire: 2022/2023</h3>
+        </div>
+        <div class="logo"><img src="images/logo-fatma2.png" alt="" /></div>
+
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- 
+      block Three
+     -->
+
+    <section class="block-three">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">Introduction</h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <h4>Le World-Wide Web (ou WWW, ou Web)</h4>
+            <p style="margin-left: 35px">
+              Le web est un tr`es grand systeme d’information reparti sur un
+              ensemble de machines connect ́ees par le reseau Internet.
+            </p>
+            <p style="margin-left: 35px">
+              Syst`eme hypertexte public fonctionnant sur Internet et qui permet
+              de consulter, avec un navigateur, des pages mises en ligne dans
+              des sites.
+            </p>
+          </div>
+          <div>
+            <h4>
+              Les pages stockees sur le serveur
+              <span class="blue">HTTP</span> (Hyper Text Transfert Protocol:
+              protocole de transfert permettant de demander un fichier au
+              serveur ainsi qu’une description de types des donn ́ees associees).
+            </h4>
+          </div>
+          <div>
+            <h4>
+              Les ressources (fichier, documents, ..) sur le Web sont identifies
+              par un <span class="blue">URL (Uniform Resource Locator)</span>
+            </h4>
+          </div>
+
+          <div>
+            <h4>
+              Une URL repr ́esente une identification d’un endroit o`u stocke une
+              ressource sur le r ́eseau Internet ( http://www.example.com/
+              chemin/page.html?q=req)
+            </h4>
+            <p>Format du l’URL:</p>
+            <ul>
+              <li>http: <span class="red">protocole</span></li>
+              <li>www.example.com: <span class="red">hote</span></li>
+              <li>
+                /chemin/: <span class="red">chemin absolu sur le service</span>
+              </li>
+              <li>page.html: <span class="red"> nom de la page Web</span></li>
+              <li>
+                q=req:
+                <span class="red"
+                  >chaine de requˆete, transmise `a la page</span
+                >
+              </li>
+              <b>
+                <span class="blue">
+                  ⇒ Communication entre un serveur (HTTP) et un client
+                  (navigateur)</span
+                >
+              </b>
+            </ul>
+          </div>
+        </div>
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- 
+      block Four
+     -->
+    <section class="block-four">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">Introduction</h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <h4 class="red">C’est quoi une application web?</h4>
+            <p>Une application dont l’infrastructure est constituée:</p>
+            <div>
+              <p>
+                d’un navigation web pour
+                <span class="blue">interaction</span> avec l’utilisateur
+              </p>
+              <p>
+                d’un serveur web pour la
+                <span class="blue">realisation des services</span>
+              </p>
+              <p>
+                ́eventuellement, d’autres serveurs pour la r ́ealisation des
+                services sp ́ecialis ́es: sgbd, annuaire, authentification, ...
+              </p>
+            </div>
+          </div>
+          <div>
+            <h4 class="red">Sur quel type d’architecture l’installer?</h4>
+            <p>
+              <span class="blue"
+                >Souvent sur une architecture type Client/serveur</span
+              >
+            </p>
+            <div>
+              <p>
+                C’est l’architecture habituelle que vous utilisez sur vos
+                ordinateurs
+              </p>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- 
+      block Five
+     -->
+    <section id="arch-Web" class="block-five">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">Architecture web</h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <h4 class="red">C’est quoi une application web ??</h4>
+
+            <div>
+              <p>
+                Un client se connecte au serveur `a travers un navigateur web
+                tel que google chrome, Internet Explorer. . . .
+              </p>
+              <p>
+                Les clients (navigateurs) envoient des requˆetes sous la forme
+                d’un hyperlien `a un serveur.
+              </p>
+              <p>
+                Le serveur HTTP re ̧coit cet ordre (requˆete), il le traduit en
+                interne par une requˆete GET avec des param`etres pr ́ecis
+                indiquant le serveur, le port. . . sur lequel il faut mettre les
+                informations.
+              </p>
+              <p>
+                Le serveur retourne le r ́esultat de l’ex ́ecution (une r ́eponse)
+                au client web: soit en retournant un document (page web, image
+                etc.), soit en indiquant qu’il y a erreur (formulation
+                incorrecte de la requˆete ou donn ́ees non disponibles).
+              </p>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- 
+      block Six
+     -->
+    <section class="block-Six block-five">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">Architecture web</h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <h4 class="red">Aujourd’hui</h4>
+
+            <div>
+              <p>
+                Ajout du protocole CGI (Commun Gateway Interface) `a HTTP pour
+                permettre l’implantation d’une relation client/serveur plus
+                ́elabor ́ee o`u les requˆetes comprennent des param`etres et les
+                fichiers retourn ́es sont g ́en ́er ́es dynamiquement suite `a l’ex
+                ́ecution de programmes → Le serveur HTTP donne la main `a
+                l’interface CGI qui va invoquer l’ex ́ecution du programme ad
+                ́equate sur le serveur ⇒
+                <span class="blue"
+                  >Generation dynamique des fichiers stockes.</span
+                >
+              </p>
+            </div>
+            <div align="center">
+              <img width="80%" src="/images/arch-web1.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- 
+      block Seven
+     -->
+    <section class="block-seven">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">Architecture web</h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <h4>
+              1ere g ́en ́eration des architectures web:
+              <span class="blue">le web statique</span>
+            </h4>
+            <p>
+              Le web est essentiellement constitu ́e de documents hypertextes d
+              ́ecrites `a l’aide du langage HTML (Hyper Text Markup Language).
+              Ces documents (pages) sont statiques. Ils seront toujours affich
+              ́ees `a l’identique.
+            </p>
+          </div>
+
+          <div>
+            <h4>
+              2`eme g ́en ́eration de l’architecture web:
+              <span class="blue">le web dynamique</span>
+            </h4>
+            <p>
+              Le contenu d’une page web dynamique peut donc varier en fonction
+              d’informations (heure, nom de l’utilisateur, formulaire rempli par
+              l’utilisateur, etc.) qui ne sont connues qu’au moment de sa
+              consultation. Pour rendre les pages dynamiques, il faut ins ́erer
+              des modules programm ́es dans les pages cˆot ́e clients et cot ́e
+              serveurs.
+            </p>
+
+            <p>
+              <span class="green">Client:</span> Ajouter les scripts de type
+              javascript.
+            </p>
+            <p>
+              <span class="green">Serveur:</span> Au lieu de servir des
+              documents stock ́es une fois pour toute (des pages dites
+              statiques), le serveur va ex ́ecuter des instructions pour r
+              ́epondre `a chaque requˆete et g ́en ́erer la r ́eponse (code HTML)
+              appropri ́ee; on parle alors de pages dynamique.
+            </p>
+          </div>
+
+          <div>
+            <h4>
+              3eme generation de l’architecture web:
+              <span class="blue">les web Services</span>
+            </h4>
+            <p>
+              L’architecture applicative web moderne est orient ́ee services,
+              soumission partielle de formulaires, mise `a jour que des parties
+              de HTML concern ́ees, voire seulement des donn ́ees modifi ́ees (avec
+              prise en charge en Javascript cˆot ́e client). Il ne s’agit donc
+              plus d’appeler telle ou telle page mais d’invoquer tel ou tel
+              service ultra sp ́ecialis ́e.
+            </p>
+          </div>
+        </div>
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- 
+      block eight
+     -->
+    <section class="block-eight block-five">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">Application web</h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <h4 class="red">Interets de l’application web</h4>
+
+            <div>
+              <p>
+                Portabilite de la partie cliente:
+                <span class="blue">Fonctionne sur tout navigateur</span>
+              </p>
+              <p>
+                Deploiement facilit ́e des applications:
+                <span class="blue">Langage simplifie et standard</span>
+              </p>
+              <p>
+                Acces important :
+                <span class="blue">
+                  Pas de limitation sur le nombre d’acces</span
+                >
+              </p>
+              <p>
+                Services en ligne:
+                <span class="blue"
+                  >Les services en ligne deviennent un des modes les plus
+                  courants de d ́eveloppement d’applications</span
+                >
+              </p>
+              <p>
+                Securite : 1 seul protocole (<span class="blue"
+                  >On accede par une URL : seule et unique</span
+                >)
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="red">Les technologies de base utilisees</h4>
+
+            <div>
+              <p>
+                Un protocole dechange entre clients et serveurs standardis ́e:
+                <span class="red">HTTP</span>
+              </p>
+              <p>
+                Un m ́ecanisme de nommage uniforme et extensible:
+                <span class="red">URL</span>
+              </p>
+              <p>
+                Un langage de description des ressources uniforme, standardis ́e
+                et ouvert:
+                <span class="red">HTML</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+
+      <!-- btn for scroll to top -->
+      <div class="btn-scroll-top">^</div>
+    </section>
+
+    <!-- 
+      block nine
+     -->
+    <section id="lang-Html" class="block-nine block-five">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">Langage HTML</h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <h4 style="font-weight: 400">
+              HTML (Hyper Text MarkUp Language) est un langage de description
+              (et non pas un langage de programmation) qui va nous permettre de
+              d ́ecrire l’aspect d’un document, d’y inclure des informations vari
+              ́ees (textes, images, sons, animations etc.) et d’ ́etablir des
+              relations coh ́erentes entre ces informations grˆace aux liens
+              hypertextes.
+            </h4>
+            <h4 style="font-weight: 400">
+              La description d’un document HTML passe par l’utilisation des
+              commandes appel ́ees <b>balises</b> (ou ”TAGS” en anglais). Une
+              balise est d ́elimit ́ee par les signes ”<” et ”>” entre lesquels
+              figure le nom de la balise.
+            </h4>
+
+            <div>
+              <p>
+                Les balises agissent de fa ̧con g ́en ́erale sur le groupe de mots
+                qu’elles encadrent dans le document source.
+              </p>
+            </div>
+            <h4 style="color: var(--red-color)">
+              De quoi avez-vous besoin pour creer une page web?
+            </h4>
+            <div style="margin-left: 80px">
+              <p>
+                un navigateur (Internet Explorer, Netscape, Mozilla, Opera...)
+              </p>
+              <p>
+                un ´editeur de texte simple (⇒ Notepad, le ”simple” Bloc-notes
+                de Windows fera tres bien l’affaire !)
+              </p>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- 
+      block teen
+     -->
+    <section class="block-teen block-five">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">Votre premi`ere page HTML</h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <h4 style="font-weight: 400">
+              Faisons ensemble notre premier document Html
+            </h4>
+
+            <div>
+              <p>Ouvrir l’ ́editeur de texte.</p>
+              <p>Ecrire les codes Html suivants:</p>
+            </div>
+            <div><img src="./images/Langage-HTML1.png" alt="" /></div>
+          </div>
+        </div>
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- 
+      block 11
+     -->
+    <section class="block-eleven block-five">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">Votre premiere page HTML</h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <h4 style="font-weight: 400">
+              Enregistrez le document au format HTML (*.html ou *.htm).
+            </h4>
+            <h4 style="font-weight: 400">
+              Dans la case ”Nom”, tapez : index.html. Dans la case ”Type”,
+              choisissez Tous(*.*) dans la liste d ́eroulante.
+            </h4>
+
+            <div>
+              <p>
+                Voila votre page est enregistr ́ee. Vous pouvez ouvrir votre
+                navigateur et visualiser votre premi`ere page. Le seul texte qui
+                apparaˆıtra sera ”Bonjour, voici ma premi ́ere page web !”.
+              </p>
+            </div>
+            <h4 style="font-weight: 400">
+              <span class="blue">Le doctype:</span> Le doctype est un code sp
+              ́ecifique place au tout d ́ebut d’un document HTML. Il pr ́ecise au
+              navigateur le langage retenu pour l’ ́ecriture de la page : HTML ou
+              XHTML, en version stricte ou transitionnelle, etc. <br />
+              <span class="blue">⇒</span>
+              <b>Ajoutez < DOCTYPE HTML > au debut de votre code html.</b>
+            </h4>
+          </div>
+        </div>
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- 
+      block 12
+     -->
+    <section class="block-12">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">Langage HTML</h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <p>Vos premi`eres balises:</p>
+            <div>
+              <div><img src="./images/Langage-HTML2.png" alt="" /></div>
+            </div>
+            <div>
+              <p>
+                Notez que les balises ne sont pas ”case sensitive”. Il est donc
+                ́equivalent d’ ́ecrire < HTML >, < html >, < Html >, etc.
+              </p>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- 
+      block 13
+     -->
+    <section class="block-13">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">
+            <span class="red">Balise</span>
+            <span class="blue">&lt;meta&gt;</span>
+          </h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <h4>
+              Ajouter la balise suivante dans l’en-tete &lt;head&gt;: &lt;meta
+              charset=UTF-8&gt;&lt;/&gt; &lt;meta name=”Description”
+              content=”Introduction au langage HTML”&gt; &lt;/&gt;
+            </h4>
+            <p>
+              La balise &lt;meta&gt; permet de donner des ”m ́eta-informations”
+              sur le document.
+            </p>
+            <p>
+              Ces meta sont utilis ́es principalement par les moteurs de
+              recherche (google) avec des name sp ́ecifique.
+            </p>
+          </div>
+          <div>
+            <p>
+              La langue du document est pr ́ecis ́ee dans la balise &lt;meta&gt;
+              dans l’en-tˆete &lt;head&gt; de tout document HTML comme suit : p
+              meta charset=UTF-8 >
+            </p>
+            <p>
+              La balise &lt;meta&gt; permet de donner des ”m ́eta-informations”
+              sur le document.
+            </p>
+            <p>
+              Ces meta sont utilis ́es principalement par les moteurs de
+              recherche (google) avec des name specifique.
+            </p>
+          </div>
+          <p>
+            <span class="red">=></span> Name, content repr ́esentent les
+            attributs de la balise &lt;meta&gt;.
+          </p>
+        </div>
+
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- 
+      block 14
+     -->
+    <section class="block-14 block-five">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">Le texte</h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <h4 style="font-weight: 400">
+              Tout document Html contiendra en majorit ́e du texte.
+            </h4>
+
+            <div>
+              <p>
+                Pour d ́eclarer un paragraphe, on ́ecrira: &lt;p&gt;Ceci est un
+                paragraphe.&lt;/p&gt;
+              </p>
+            </div>
+          </div>
+          <div>
+            <h4>Mise en forme : Les couleurs</h4>
+
+            <div>
+              <p>mettre le texte en couleur</p>
+            </div>
+          </div>
+          <div>
+            <img src="./images/Langage-HTML3.png" alt="" />
+          </div>
+        </div>
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- 
+      block 15
+     -->
+    <section class="block-15">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">Le texte</h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <div>
+              <p>mettre le fond de l’ ́ecran en couleur</p>
+            </div>
+          </div>
+
+          <div>
+            <img src="./images/Langage-HTML4.png" alt="" />
+          </div>
+
+          <div>
+            <div>
+              <p>La balise &lt;br&gt; permet de faire un saut de ligne.</p>
+              <p>
+                Les balises &lt;font&gt; et &lt;/font&gt; permettent de modifier
+                l’apparence du texte. Elle doit recevoir des informations
+                provenant d’attribut(s) (color) pour connaˆıtre la mise en forme
+                `a appliquer.
+              </p>
+              <p>
+                Lattribut ”bgcolor” dans &lt;BODY&gt;: ”bgcolor” (⇒ background
+                color: couleur de fond) permet de mettre le fond de l’ ́ecran en
+                couleur tout comme le fait ”color” pour le texte.
+              </p>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- 
+      block 16
+     -->
+    <section class="block-16">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">Le texte</h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <h4>Mise en forme : alignement et gras</h4>
+
+            <div>
+              <p>mettre du texte en gras, italique,....</p>
+            </div>
+          </div>
+
+          <div>
+            <img src="./images/Langage-HTML5.png" alt="" />
+          </div>
+        </div>
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- 
+      block 17
+     -->
+    <section class="block-17">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">Le texte</h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <p>&lt;b&gt; et &lt;/b&gt;: ́ecrit le texte en gras.</p>
+            <p>&lt;i&gt; et &lt;/i&gt;: ́ecrit du texte en italique.</p>
+            <p>
+              &lt;u&gt; et &lt;/u&gt;: souligne du texte. Evitez d’utiliser trop
+              cette balise car un texte soulign ́e peut ˆetre confondu avec un
+              lien et ̧ca peut ́etre gˆenant pour le visiteur.
+            </p>
+            <p>
+              &lt;center&gt; et &lt;/center&gt;: centre le texte par rapport `a
+              l’ ́ecran.
+            </p>
+            <p>
+              &lt;!- - et - -&gt;: Ces balises permettent de commenter votre
+              code. Le texte compris entre ces balises ne sera pas pris en
+              compte par le navigateur ( ⇒ pas affich ́e !).
+            </p>
+            <p>
+              L’attribut “align” permet d ́efinir l’alignement horizontal d’un
+              paragraphe.
+            </p>
+            <div>
+              <p>left alignement `a gauche (option par d ́efaut)</p>
+              <p>center pour aligner au centre</p>
+              <p>right pour aligner `a droite</p>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- 
+      block 18
+     -->
+    <section class="block-18">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">Le texte</h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <h4>Mise en forme : Les titres et les listes</h4>
+          </div>
+
+          <div>
+            <img src="./images/Langage-HTML6.png" alt="" />
+            <img src="./images/Langage-HTML7.png" alt="" />
+          </div>
+        </div>
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- 
+      block 19
+     -->
+    <section class="block-19">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">Le texte</h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <div>
+              <img src="./images/Langage-HTML8.png" alt="" />
+            </div>
+            <p>
+              <strong> =></strong> On peut ajouter l’attribut “type” aux balises
+              &lt;li&gt; et &lt;ol&gt; pour personnaliser les items.
+            </p>
+            <p>
+              Les valeurs de l’attribut “type”pour la balise &lt;li&gt;peuvent
+              ˆetre: disc (defaut), circle, square &lt;/li&gt;
+            </p>
+
+            <p>
+              Les valeurs de l’attribut “type”pour la balise &lt;ol&gt; peuvent
+              ˆetre: 1 (par d ́efaut), a, A, i, I
+            </p>
+          </div>
+        </div>
+
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- 
+      block 20
+     -->
+    <section class="block-20">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">Le texte</h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <p>
+              La balise &lt;HR&gt; permet d’ins ́erer une ligne dans la page. Les
+              valeurs par d ́efaut de la balise &lt;HR&gt; sont:
+            </p>
+            <div>
+              <p>Une ́epaisseur de trait de 2 pixels.</p>
+              <p>Un alignement centr ́e.</p>
+              <p>Une largeur de 100 % de la fenˆetre.</p>
+            </div>
+
+            <p>Il est possible de modifier les valeurs de ces attributs.</p>
+            <div>
+              <p>
+                Epaisseur: <span class="blue">&lt;HR size= &gt; en pixels</span>
+              </p>
+              <p>
+                <span class="blue">Largeur: &lt;HR width = &gt; </span> en
+                pixels ou <span> &lt;HR width =”%”&gt; </span> en % de la
+                fenˆetre.
+              </p>
+              <p>
+                Alignement:
+                <span class="blue">&lt;HR Align=left&gt;:</span> pour
+                positionner la ligne `a gauche,<span class="blue">
+                  &lt;HR align=right&gt;</span
+                >: pour positionner la ligne `a droite,
+                <span class="blue">&lt;HR align=center&gt;</span>: pour centrer
+                la ligne.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- 
+      block 21
+     -->
+    <section class="block-21">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">Les liens</h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <h4 style="font-weight: 400">
+              Html (Hyper Text Markup Language) est un langage hypertexte (et
+              hypergraphique) qui vous permet en cliquant sur un mot, g ́en
+              ́eralement soulign ́e (ou une image) de vous transporter;
+            </h4>
+          </div>
+          <div>
+            <p>vers un autre endroit du document.</p>
+            <p>vers un autre fichier Html situ ́e sur votre ordinateur.</p>
+            <p>vers un autre ordinateur situ ́e sur le Web.</p>
+          </div>
+          <p>
+            <strong>⇒</strong> Pour d ́efinir un lien, il faut utiliser la balise
+            &lt;a HREF=”URL ou adresse”&gt;....&lt; /a&gt;.
+          </p>
+        </div>
+
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- 
+      block 22
+     -->
+    <section class="block-22">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">Les liens</h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <h4 style="font-weight: 400">
+              <strong>Lien externe :</strong> Un lien externe est un lien vers
+              une page point ́ee par son URL. Par example : &lt;a
+              href=”uas.ens.tn”&gt; site de l’UAS &lt; //a&gt;
+            </h4>
+            <h4 style="font-weight: 400">
+              <strong>Lien local :</strong> L’organisation classique, et plus
+              que conseill ́ee, d’un site Web consiste `a regrouper l’ensemble
+              des ́el ́ements de celui-ci (fichiers htm, images, ...) dans un
+              mˆeme r ́epertoire. L’adresse du lien sera alors tout simplement:
+              Nomfichier.html. Par exemple : &lt;a href=”index.html”&gt; Aller
+              vers la page index &lt;/a&gt;
+            </h4>
+            <h4 style="font-weight: 400">
+              <strong> Les ancres:</strong> Des liens peuvent aussi pointer vers
+              un endroit pr ́ecis du mˆeme document ou d’un autre fichier. C’est
+              ce qu’on appelle
+              <span class="blue">les ancres, ancrages ou pointeurs.</span>
+            </h4>
+          </div>
+          <div>
+            <img src="./images/Langage-HTML9.png" alt="" />
+          </div>
+        </div>
+
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- 
+      block 23
+     -->
+    <section class="block-23">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">Les liens</h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <h4 style="font-weight: 400">Exp ́erimentons tout ceci:</h4>
+          </div>
+          <div>
+            <img src="./images/Langage-HTML10.png" alt="" />
+          </div>
+        </div>
+
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- 
+      block 24
+     -->
+    <section class="block-24 block-23">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">Les images</h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <h4 style="font-weight: 400">
+              On peut ins ́erer des images `a nous pages html. Le code Html est:
+              <span class="blue">&lt;IMG SRC=”Adresse de l’image”&gt;</span>
+            </h4>
+            <h4 style="font-weight: 400">
+              Types d’images g ́en ́eralement support ́e: gif, jpg, png.
+            </h4>
+            <h4 style="font-weight: 400">
+              La balise image poss`ede de nombreux attributs.
+            </h4>
+          </div>
+          <div>
+            <img src="./images/Langage-HTML11.png" alt="" />
+          </div>
+        </div>
+
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- 
+      block 25
+     -->
+    <section class="block-25">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">Les images</h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <h4 style="font-weight: 400">
+              En Html, l’image ne fait pas partie de votre document. Le browser
+              va la chercher `a l’adresse indiqu ́ee. G ́en ́eralement, on place
+              les images dans le mˆeme r ́epertoire que les pages Html.
+            </h4>
+            <h4 style="font-weight: 400">
+              Presque en cons ́equence logique de ceci, le fait d’utiliser la
+              mˆeme image `a plusieurs reprises dans un fichier Html ne modifie
+              en rien sa taille.
+            </h4>
+            <h4 style="font-weight: 400">
+              Pr ́evoir un texte pour les browsers n’ayant pas l’option image
+              activ ́ee, permet au lecteur de ne pas perdre le fil de l’expos ́e
+              et peut-ˆetre d’activer cette option pour d ́ecouvrir votre oeuvre.
+            </h4>
+            <h4 style="font-weight: 400">
+              Il est important pour la fluidit ́e de l’affichage de pr ́eciser la
+              taille en hauteur et largeur de l’image car le browser peut ainsi
+              connaissant l’emplacement `a r ́eserver pour celle-ci.
+            </h4>
+          </div>
+        </div>
+
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- 
+      block 26
+     -->
+    <section class="block-26">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">Les images</h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <h4 style="font-weight: 400">
+              L’attribut align positionne l’image par rapport au texte
+            </h4>
+            <img src="./images/Langage-HTML12.png" alt="" />
+            <h4>Jouez un peu avec tout ̧ca.</h4>
+            <h4 style="font-weight: 400">
+              <strong> Mettez l’image sous forme d’un lien.</strong> Example:
+              &lt;A HREF=”fichier.htm”&gt;&lt;IMG SRC=”image.gif”&gt;&lt;/A&gt;
+            </h4>
+            <h4 style="font-weight: 400">
+              <strong> Mettez l’image en backgroud.</strong> Example: &lt;BODY
+              BACKGROUND=”PAPER.gif”&gt; &lt;H1&gt;Bonjour&lt;/H1&gt;
+              &lt;/BODY&gt;
+            </h4>
+          </div>
+        </div>
+
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- 
+      block 27
+     -->
+    <section class="block-27">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">Les tables</h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <h4 style="font-weight: 400">
+              En Html, les tableaux servent non seulement `a aligner des
+              chiffres mais surtout `a placer des ́el ́ements `a l’emplacement que
+              vous souhaitez. L’usage des tableaux est donc tr`es fr ́equent.
+            </h4>
+            <h4 style="font-weight: 400">
+              Un tableau est compos ́e de lignes et de colonnes qui forment les
+              cellules du tableau.
+            </h4>
+            <h4 style="font-weight: 400">Les balises de base sont donc:</h4>
+            <div>
+              <img src="./images/Langage-HTML13.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- 
+      block 28
+     -->
+    <section class="block-28">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">Les tables</h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <div>
+              <img src="./images/Langage-HTML14.png" alt="" />
+            </div>
+            <h4 style="font-weight: 400">
+              Si vous souhaitez y adjoindre des bordures: Ajoutez l’attribut
+              border. Exemple &lt;TABLE border=2&gt;&lt;/TABLE&gt;
+            </h4>
+          </div>
+        </div>
+
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- 
+      block 29
+     -->
+    <section class="block-29">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">Les tables</h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <h4 style="font-weight: 400">
+              Il y a encore trois ́el ́ements (d ́efinis par d ́efaut mais
+              modifiables):
+            </h4>
+
+            <div>
+              <img src="./images/Langage-HTML15.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- 
+      block 30
+     -->
+    <section class="block-30">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">Les tables</h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <h4 style="font-weight: 400">Construisons des exemples:</h4>
+
+            <div>
+              <img src="./images/Langage-HTML16.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- 
+      block 31
+     -->
+    <section class="block-31">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">Votre premi`ere page HTML</h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <h4 style="font-weight: 400">
+              les cellules peuvent contenir tous les ́elements Html d ́ej`a pass
+              ́es en revue soit:
+            </h4>
+
+            <div>
+              <p>du texte</p>
+              <p>des images</p>
+              <p>des liens</p>
+              <p>des arri`ere-plans</p>
+              <p>et mˆeme des tableaux (eh oui!)</p>
+            </div>
+            <h4 style="font-weight: 400">Sp ́ecifications des cellules</h4>
+            <div><img src="./images/Langage-HTML17.png" alt="" /></div>
+            <h4 style="font-weight: 400">
+              Cr ́eer un tableau centr ́e qui occupe 60% de la fenˆetre avec une
+              ligne, trois colonnes ́egales.
+            </h4>
+          </div>
+        </div>
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- 
+      block 32
+     -->
+    <section class="block-32">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">Les tables</h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <h4>colspan et rowspan</h4>
+
+            <div>
+              <img src="./images/Langage-HTML18.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- 
+      block 33
+     -->
+    <section class="block-33">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">Les tables</h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <h4>Alignement</h4>
+            <div>
+              <img src="./images/Langage-HTML19.png" alt="" />
+            </div>
+
+            <h4>Exemple:</h4>
+            <div>
+              <img src="./images/Langage-HTML20.png" alt="" />
+            </div>
+
+            <h4 style="font-weight: 400">
+              Changer Couleur de la cellule: &lt;td
+              bgcolor="”red”"&gt;&lt;/td&gt;
+            </h4>
+          </div>
+        </div>
+
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- 
+      block 34
+     -->
+    <section class="block-34">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">Les tables</h3>
+        </div>
+
+        <div class="content">
+          <div style="text-align: center">
+            <img src="./images/Langage-HTML21.png" alt="" />
+          </div>
+        </div>
+
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- 
+      block 34
+     -->
+    <section id="ex1" class="block-34">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">TP 1</h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <div>
+              <p>
+                <strong>Exercice : </strong> Composez une page ressemblant `a
+                l’image suivante
+              </p>
+              <a
+                target="_self"
+                class="corr-btn"
+                href="./Corr-tp/TP_1/EX_1/index.html"
+                >Correction</a
+              >
+            </div>
+
+            <div>
+              <img src="./images/Langage-HTML22.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- 
+      block 35
+     -->
+    <section id="ex2" class="block-35">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">TP 1</h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <div>
+              <p class="ques">
+                <strong>Exercice :</strong> Realisez un mini site comprenant
+                votre CV selon le descriptif suivant
+              </p>
+              <a class="corr-btn" target="_top" href="./Corr-tp/TP_1/EX_2"
+                >Correction</a
+              >
+            </div>
+            <div>
+              <p>
+                Un tableau avec bordure fine qui comportera les informations
+                ”standards”
+              </p>
+              <p>
+                4 rubriques, Formation, Exp ́erience professionnelle, Comp
+                ́etences, et Informations compl ́ementaires (titre en H2 par
+                exemple)
+              </p>
+            </div>
+
+            <div>
+              <p>
+                Pour chaque rubrique un tableau `a 2 colonnes et N lignes,
+                chaque ligne comprend `a gauche les ann ́ees X+1-X dans une liste
+                `a puces et la colonne de droite comporte la description de
+                l’ann ́ee en question (cf. plus bas!).
+              </p>
+              <p>Le tableau sera sans bordure</p>
+              <p>
+                Vous pouvez aussi utiliser les attributs:
+                <span class="blue"
+                  >COLSPAN et ROWSPAN de la balise TABLE pour s ́eparer les diff
+                  ́erentes cellules</span
+                >
+                et
+                <span class="red"
+                  >WIDTH de la balise TD et de la balise TABLE pour modifier les
+                  tailles respectives de la cellule et du tableau (valeur `a
+                  donner en % de l’ ́ecran d’affichage)</span
+                >
+              </p>
+            </div>
+            <div>
+              <p>Inserez aussi votre photo</p>
+            </div>
+          </div>
+        </div>
+
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- 
+      block 36
+     -->
+    <section class="block-36">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">TP 1</h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <img src="./images/Langage-HTML23.png" alt="" />
+          </div>
+        </div>
+
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!---- 
+      block 37 => loading ...
+     ------>
+    <section id="css" class="block-37">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">CSS</h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <h3>CSS Course Loading ...</h3>
+          </div>
+          <div class="loader">
+            <span style="--i: 1"></span>
+            <span style="--i: 2"></span>
+            <span style="--i: 3"></span>
+            <span style="--i: 4"></span>
+            <span style="--i: 5"></span>
+            <span style="--i: 6"></span>
+            <span style="--i: 7"></span>
+            <span style="--i: 8"></span>
+            <span style="--i: 9"></span>
+            <span style="--i: 10"></span>
+            <span style="--i: 11"></span>
+            <span style="--i: 12"></span>
+            <span style="--i: 13"></span>
+            <span style="--i: 14"></span>
+            <span style="--i: 15"></span>
+            <span style="--i: 16"></span>
+            <span style="--i: 17"></span>
+            <span style="--i: 18"></span>
+            <span style="--i: 19"></span>
+            <span style="--i: 20"></span>
+          </div>
+        </div>
+
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!---- 
+      block 37 => loading ...
+     ------>
+    <section id="js" class="block-38 block-37">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">JavaScript</h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <h3>JavaScript Course Loading ...</h3>
+          </div>
+          <div class="loader">
+            <span style="--i: 1"></span>
+            <span style="--i: 2"></span>
+            <span style="--i: 3"></span>
+            <span style="--i: 4"></span>
+            <span style="--i: 5"></span>
+            <span style="--i: 6"></span>
+            <span style="--i: 7"></span>
+            <span style="--i: 8"></span>
+            <span style="--i: 9"></span>
+            <span style="--i: 10"></span>
+            <span style="--i: 11"></span>
+            <span style="--i: 12"></span>
+            <span style="--i: 13"></span>
+            <span style="--i: 14"></span>
+            <span style="--i: 15"></span>
+            <span style="--i: 16"></span>
+            <span style="--i: 17"></span>
+            <span style="--i: 18"></span>
+            <span style="--i: 19"></span>
+            <span style="--i: 20"></span>
+          </div>
+        </div>
+
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!---- 
+      block 39
+     ------>
+    <section id="conclusion" class="block-39">
+      <div class="container">
+        <div>
+          <header></header>
+          <h3 class="titles">Conclusion</h3>
+        </div>
+
+        <div class="content">
+          <div>
+            <img src="./images/coding.jpg" alt="" />
+          </div>
+        </div>
+
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+
+    <!---- 
+      block 40 
+     ------>
+    <section class="block-40">
+      <div class="container">
+        <div>
+          <header></header>
+        </div>
+
+        <div class="content">
+          <div>
+            <h2>Thank you!</h2>
+            <h3>E-mail: salwahabbachi29@gmail.com</h3>
+          </div>
+        </div>
+
+        <footer>
+          <p>Salwa Habbachio (UAS)</p>
+          <p>UAS</p>
+          <p>Programmation Web I, 2022</p>
+        </footer>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+.back-btn {
+  background-color: #dc3545;
+  text-decoration: none;
+  color: #fff;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-top: 15px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+body {
+  background: #aaa;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  width: 1200px;
+}
