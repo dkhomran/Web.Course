@@ -65,6 +65,9 @@ li {
     position: absolute;
     right: 20% !important;
   }
+  #dark-mode {
+    left: 20% !important;
+  }
   .block-tow {
     right: 20% !important;
     left: 20% !important;
@@ -78,6 +81,10 @@ li {
     position: absolute;
     right: 15% !important;
   }
+  #dark-mode {
+    left: 15% !important;
+  }
+
   .block-tow {
     right: 15% !important;
     left: 15% !important;
@@ -91,6 +98,9 @@ li {
     position: absolute;
     right: 10% !important;
   }
+  #dark-mode {
+    left: 10% !important;
+  }
   .block-tow {
     right: 10% !important;
     left: 10% !important;
@@ -103,6 +113,11 @@ li {
   .nav-bar img {
     position: absolute;
     right: 2% !important;
+  }
+  #dark-mode {
+    left: 1% !important;
+    font-size: 13px;
+    top: 5px !important;
   }
   .block-tow {
     right: 0% !important;

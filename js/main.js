@@ -52,7 +52,6 @@ document.body.onclick = (eo) => {
     eo.target != first_Header &&
     eo.target != nav_Icon
   ) {
-    console.log("object");
     nav_content.classList.remove("nav_toggle");
   }
 };
