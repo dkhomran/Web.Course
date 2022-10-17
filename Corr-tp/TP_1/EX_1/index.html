@@ -4,88 +4,100 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./../../back-btn.css" />
+    <link rel="stylesheet" href="./../../TP_Ex.css" />
     <link
       rel="shortcut icon"
       href="./images/favicon1.png"
       type="image/x-icon"
     />
 
+    <script defer src="./ex1.js"></script>
+
     <title>EX_1</title>
   </head>
   <body>
     <div class="container">
-      <!-- Start Btn Back to main page  -->
-      <a class="back-btn" href="./../../../index.html#ex1"><b>&lt;</b> back</a>
-      <!-- End Btn Back to main page  -->
+      <div class="btns">
+        <!-- Start Btn Back to main page  -->
+        <a class="btn btn-back" href="./../../../index.html#ex1"
+          ><b>&lt;</b> back</a
+        >
+        <!-- End Btn Back to main page  -->
+
+        <!-- Start Btn Code Ex1 Corr -->
+        <a id="btn-sh-code-ex1" class="btn btn-code-Ex">Show Code</a>
+        <!-- End Btn Back Code Ex2 Corr -->
+      </div>
 
       <!-- Start Ex 1 -->
       <!-- Start Part 1 -->
-      <h1>EX1_Part 1 :</h1>
-      <table width="100%" border="1" cellpadding="10">
-        <tbody>
+      <div id="content_code1" class="content">
+        <h1>EX1_Part 1 :</h1>
+        <table width="100%" border="1" cellpadding="10">
+          <tbody>
+            <tr>
+              <td width="33.5%">un tableau</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>à 6</td>
+              <td>cases</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- End Part 1 -->
+
+        <!-- Start Part 2 -->
+        <h1>EX1_Part 2 :</h1>
+        <ol>
+          <li>
+            premier point
+            <ul>
+              <li>rubique 1</li>
+              <li>rubique 2</li>
+            </ul>
+          </li>
+          <li>2e point</li>
+          <li>
+            3e point
+            <ul>
+              <li>rubique 1</li>
+              <li>rubique 2</li>
+            </ul>
+          </li>
+        </ol>
+        <!-- End Part 2 -->
+
+        <!-- Start Part 3 -->
+        <h1>EX1_Part 3 :</h1>
+        <table width="100%" border="1" cellpadding="10">
           <tr>
-            <td width="33.5%">un tableau</td>
+            <td width="25%">un autre tableau</td>
+            <td width="25%"></td>
+            <td width="25%"></td>
+            <td colspan="2"></td>
+          </tr>
+          <tr>
+            <td rowspan="3"></td>
+            <td></td>
+            <td rowspan="3"></td>
+            <td colspan="2"></td>
+          </tr>
+          <tr>
+            <td></td>
             <td></td>
             <td></td>
           </tr>
           <tr>
             <td></td>
-            <td>à 6</td>
-            <td>cases</td>
+            <td colspan="2"></td>
           </tr>
-        </tbody>
-      </table>
-      <!-- End Part 1 -->
-
-      <!-- Start Part 2 -->
-      <h1>EX1_Part 2 :</h1>
-      <ol>
-        <li>
-          premier point
-          <ul>
-            <li>rubique 1</li>
-            <li>rubique 2</li>
-          </ul>
-        </li>
-        <li>2e point</li>
-        <li>
-          3e point
-          <ul>
-            <li>rubique 1</li>
-            <li>rubique 2</li>
-          </ul>
-        </li>
-      </ol>
-      <!-- End Part 2 -->
-
-      <!-- Start Part 3 -->
-      <h1>EX1_Part 3 :</h1>
-      <table width="100%" border="1" cellpadding="10">
-        <tr>
-          <td width="25%">un autre tableau</td>
-          <td width="25%"></td>
-          <td width="25%"></td>
-          <td colspan="2"></td>
-        </tr>
-        <tr>
-          <td rowspan="3"></td>
-          <td></td>
-          <td rowspan="3"></td>
-          <td colspan="2"></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td colspan="2"></td>
-        </tr>
-      </table>
-      <!-- End Part 3 -->
-      <!-- End Ex 1 -->
+        </table>
+        <!-- End Part 3 -->
+        <!-- End Ex 1 -->
+      </div>
     </div>
   </body>
 </html>
