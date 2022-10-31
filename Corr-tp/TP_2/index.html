@@ -25,9 +25,7 @@
       table tr th {
         height: 25px;
       }
-      table tr th {
-        font-size: 17px;
-      }
+ 
       table {
         border-bottom: none;
       }
@@ -45,7 +43,6 @@
       .separator_title {
         background: #fff !important;
         font-weight: bold;
-        font-size: 16px !important;
       }
 
       .mb-15 {
@@ -64,15 +61,20 @@
       .tab6 tr,
       .tab7 tr {
         background-color: #fff0f5;
-        font-size: 13px;
+        font-size: 12px;
         color: darkblue;
         font-weight: bold;
       }
 
       @media (max-width: 532px) {
-        .tab7 th {
-          font-size: 10px;
-        }
+        .tab2 tr td:first-child,
+      .tab3 tr td:first-child:not(:last-child),
+      .tab4 tr,
+      .tab5 tr td:first-child,
+      .tab6 tr,
+      .tab7 tr {
+        font-size: 8px;
+      }
       }
       .btn {
         text-align: center;
@@ -360,13 +362,13 @@
                 </td>
               </tr>
               <tr>
-                <th>Etablissement</th>
-                <th>Profils des bénéficiaires</th>
-                <th>
+                <td>Etablissement</th>
+                <td>Profils des bénéficiaires</td>
+                <td>
                   Intitulé du thème/ <br />
                   objet de la mission
-                </th>
-                <th>Date (les plus récents)</th>
+                </td>
+                <td>Date (les plus récents)</td>
               </tr>
               <tr>
                 <td>Université Ibn Khaldoun</td>
