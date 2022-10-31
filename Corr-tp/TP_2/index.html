@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../../Corr-tp/TP_Ex.css" />
+    <title>TP 2</title>
+    <style>
+      body {
+        font-family: Verdana;
+      }
+      .container {
+        width: 1200px;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      table tr td,
+      table tr th {
+        height: 25px;
+      }
+      table tr th {
+        font-size: 17px;
+      }
+      table {
+        border-bottom: none;
+      }
+      h1 {
+        font-weight: bold;
+        font-size: 22px;
+        color: darkblue;
+      }
+
+      .separator {
+        background: #dcdcdc !important;
+        color: #dcdcdc;
+        border-bottom: none;
+      }
+      .separator_title {
+        background: #fff !important;
+        font-weight: bold;
+        font-size: 16px !important;
+      }
+
+      .mb-15 {
+        margin-bottom: 15px;
+      }
+
+      textarea {
+        height: 100px;
+        width: 80%;
+      }
+
+      .tab2 tr td:first-child,
+      .tab3 tr td:first-child:not(:last-child),
+      .tab4 tr,
+      .tab5 tr td:first-child,
+      .tab6 tr,
+      .tab7 tr {
+        background-color: #fff0f5;
+        font-size: 13px;
+        color: darkblue;
+        font-weight: bold;
+      }
+
+      @media (max-width: 532px) {
+        .tab7 th {
+          font-size: 10px;
+        }
+      }
+      .btn {
+        text-align: center;
+        border: 1px solid;
+      }
+      .btn {
+        display: flex;
+        justify-content: center;
+      }
+      .btn button {
+        padding: 10px 15px;
+        background-color: #fff0f5;
+      }
+    </style>
+    <script defer src="./tp2.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="btns">
+        <!-- Start Btn Back to main page  -->
+        <a class="btn btn-back" href="./../../index.html#ex3"
+          ><b>&lt;</b> back</a
+        >
+        <!-- End Btn Back to main page  -->
+
+        <!-- Start Btn Code Ex1 Corr -->
+        <a id="btn-sh-code-tp2" class="btn btn-code-Ex">Show Code</a>
+        <!-- End Btn Back Code Ex2 Corr -->
+      </div>
+      <div class="content" id="content_code3">
+        <form action="" method="GET">
+          <table>
+            <tr>
+              <td width="80%">
+                <center><h1>Curriculum Vitae</h1></center>
+              </td>
+              <td><img width="80%" src="./logo.png" alt="" /></td>
+            </tr>
+          </table>
+
+          <div>
+            <!-- ? table 2 -->
+
+            <table
+              class="tab2"
+              border="1"
+              width="100%"
+              cellspacing="0"
+              cellpadding="5"
+            >
+              <tr>
+                <td width="50%">Nom</td>
+                <td colspan="2"><input name="nom" type="text" /></td>
+              </tr>
+              <tr>
+                <td width="50%">Prenom</td>
+                <td colspan="2"><input name="prenom" type="text" /></td>
+              </tr>
+              <tr>
+                <td width="50%">Date de naissance</td>
+                <td colspan="2"><input name="date-N" type="date" /></td>
+              </tr>
+              <tr>
+                <td width="50%">Adresse</td>
+                <td colspan="2"><input name="adresse" type="text" /></td>
+              </tr>
+              <tr>
+                <td width="50%">Téléphone</td>
+                <td colspan="2"><input name="tel" type="tel" /></td>
+              </tr>
+              <tr>
+                <td width="50%">Email</td>
+                <td colspan="2"><input name="email" type="email" /></td>
+              </tr>
+              <tr>
+                <td colspan="3" class="separator"></td>
+              </tr>
+            </table>
+
+            <!-- ? table 3 -->
+
+            <table
+              class="tab3"
+              border="1"
+              width="100%"
+              cellspacing="0"
+              cellpadding="5"
+            >
+              <tr>
+                <td rowspan="2" width="50%">secteurs d'intervention</td>
+                <td colspan="2"><input name="Sec-Interv1" type="text" /></td>
+              </tr>
+              <tr>
+                <td colspan="2"><input name="Sec-Interv2" type="text" /></td>
+              </tr>
+
+              <tr>
+                <td width="50%">Niveau d'étude</td>
+                <td colspan="2">
+                  <select name="niveau" id="niveau">
+                    <option value="bac+2">Bac + 2</option>
+                    <option value="bac+3">Bac + 3</option>
+                    <option value="bac+4">Bac + 4</option>
+                  </select>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="separator" colspan="3"></td>
+              </tr>
+            </table>
+
+            <!-- ? table 4 -->
+
+            <table
+              class="tab4"
+              border="1"
+              width="100%"
+              cellspacing="0"
+              cellpadding="5"
+            >
+              <tr>
+                <td class="separator_title" colspan="3">
+                  Etudes universitaires
+                </td>
+              </tr>
+
+              <tr>
+                <th colspan="1">periode de .. à ..</th>
+                <th>Etablissements</th>
+                <th>Diplômes obtenus</th>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="separator" colspan="3"></td>
+              </tr>
+            </table>
+
+            <!-- ? table 5 -->
+
+            <table
+              class="tab5"
+              border="1"
+              width="100%"
+              cellspacing="0"
+              cellpadding="5"
+            >
+              <tr>
+                <td class="separator_title" colspan="2">Langues</td>
+              </tr>
+
+              <tr>
+                <td>1- Francais</td>
+
+                <td>
+                  <div>
+                    <input
+                      id="exfr"
+                      name="nivFR"
+                      value="Excellent"
+                      type="radio"
+                    />
+                    <label for="exfr">Excellent</label>
+                  </div>
+
+                  <div>
+                    <input id="moyfr" name="nivFR" value="Moyen" type="radio" />
+                    <label for="moyfr">Moyen</label>
+                  </div>
+
+                  <div>
+                    <input
+                      id="debfr"
+                      name="nivFR"
+                      value="Debutant"
+                      type="radio"
+                    />
+                    <label for="debfr">Debutant</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>2- Anglais</td>
+
+                <td>
+                  <div>
+                    <input
+                      id="exan"
+                      name="nivAng"
+                      value="Excellent"
+                      type="radio"
+                    />
+                    <label for="exan">Excellent</label>
+                  </div>
+
+                  <div>
+                    <input
+                      id="moyan"
+                      name="nivAng"
+                      value="Moyen"
+                      type="radio"
+                    />
+                    <label for="moyan">Moyen</label>
+                  </div>
+
+                  <div>
+                    <input
+                      id="deban"
+                      name="nivAng"
+                      value="Debutant"
+                      type="radio"
+                    />
+                    <label for="deban">Debutant</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="separator" colspan="3"></td>
+              </tr>
+            </table>
+
+            <!-- ? table 6 -->
+
+            <table
+              class="tab6"
+              border="1"
+              width="100%"
+              cellspacing="0"
+              cellpadding="5"
+            >
+              <tr>
+                <td class="separator_title" colspan="3">
+                  Compétences informatiques
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="mb-15">
+                    <input id="comp1" name="competences" type="checkbox" />
+                    <label for="comp1">Programmation multimédia</label>
+                  </div>
+                  <div>
+                    <input id="comp2" name="competences" type="checkbox" />
+                    <label for="comp2">Langages de développement (Java)</label>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="mb-15">
+                    <input id="comp3" name="competences" type="checkbox" />
+                    <label for="comp3">Génie logiciel</label>
+                  </div>
+                  <div>
+                    <input id="comp4" name="competences" type="checkbox" />
+                    <label for="comp4">Programmation web et Internet</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="separator" colspan="3"></td>
+              </tr>
+            </table>
+
+            <!-- ? table 7 -->
+
+            <table
+              class="mb-15 tab7"
+              border="1"
+              width="100%"
+              cellspacing="0"
+              cellpadding="5"
+            >
+              <tr>
+                <td class="separator_title" colspan="4">
+                  Expérience pédagogique
+                </td>
+              </tr>
+              <tr>
+                <th>Etablissement</th>
+                <th>Profils des bénéficiaires</th>
+                <th>
+                  Intitulé du thème/ <br />
+                  objet de la mission
+                </th>
+                <th>Date (les plus récents)</th>
+              </tr>
+              <tr>
+                <td>Université Ibn Khaldoun</td>
+                <td>Etudiants en informatique</td>
+                <td>
+                  <center>
+                    <textarea name="ibnKH" id="" cols="30" rows="10">
+Cours en sécurité informatique   
+                  </textarea
+                    >
+                  </center>
+                </td>
+                <td>2007- 2009</td>
+              </tr>
+              <tr>
+                <td>Université Centrale Privée</td>
+                <td>Etudiants en informatique</td>
+                <td>
+                  <center>
+                    <textarea name="centralPRV" id="" cols="30" rows="10">
+Cours en sécurité informatique Cours en web
+                  </textarea
+                    >
+                  </center>
+                </td>
+                <td>2007-2009</td>
+              </tr>
+            </table>
+
+            <!-- ! Submit btn  -->
+
+            <center class="mb-15 btn">
+              <button>Envoyer</button>
+            </center>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

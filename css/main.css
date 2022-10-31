@@ -870,6 +870,19 @@
   font-size: 20px;
 }
 
+/* ? ========================
+    ?  insert block TP2
+?  ===================== */
+
+.tp2_img1 {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.block-tp2 .content div img {
+  margin: 0;
+}
+
 /* ========
   Media Query 
   ========= */
